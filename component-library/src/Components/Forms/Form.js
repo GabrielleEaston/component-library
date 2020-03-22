@@ -1,12 +1,13 @@
-import React from 'react';
-// import "./Form.css"
-
-// This is a functional component - just sent up a little differently as an arrow function!
-const Form = (props) => (
-  <form>
-    <label htmlFor={props.type}>{props.test}</label>
-    <input className={props.type} placeholder={props.value}></input>
-  </form>
-)
-
-export default Form;
+import React from "react";
+const Input = props => (
+  <>
+    <label for={props.label}>{props.label}</label>
+    <input
+      name={props.label}
+      label={props.label}
+      placeholder={props.placeholder}
+      className={props.type}
+    />
+  </>
+);
+export default Input;

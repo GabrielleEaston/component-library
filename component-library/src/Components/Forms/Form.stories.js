@@ -1,11 +1,14 @@
-// import React from 'react';
-// import { storiesOf } from '@storybook/react';
-// // import "./Form.css"
-// import Form from './Form';
-// // import Button from './Button.js'
-
-// storiesOf('Form', module)
-//   .add('email', () => <Form label="Primary" test="primary" value="email" />)
-//   .add('salad', () => <Form label="Primary" test="primary" value="email" />)
-//   .add('email', () => <Form label="Primary" test="primary" value="email" />)
-//   .add('email', () => <Form label="Primary" test="primary" value="email" />)
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import Input from "./Form";
+import "./Form.css";
+storiesOf("Forms", module)
+  .add("Input small", () => (
+    <Input label="Email" placeholder="Email" type="input-small" />
+  ))
+  .add("Input medium", () => (
+    <Input label="Email" placeholder="Email" type="input-medium" />
+  ))
+  .add("Input large", () => (
+    <Input label="Email" placeholder="Email" type="input-large" />
+  ));
